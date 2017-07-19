@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="stepperReview" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="R88-tB-b7k">
+                                <rect key="frame" x="140" y="319" width="94" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="FDc-76-njr"/>
+                                    <constraint firstAttribute="height" constant="29" id="cUk-dd-rhv"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="stepperActn:" destination="BYZ-38-t0r" eventType="valueChanged" id="7Wx-lS-LFK"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qy7-cA-aej">
+                                <rect key="frame" x="110" y="212" width="155" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="87" id="heb-Yx-VCi"/>
+                                    <constraint firstAttribute="width" constant="155" id="sew-cA-gQS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="R88-tB-b7k" secondAttribute="trailing" constant="125" id="HXG-0N-eeT"/>
+                            <constraint firstItem="R88-tB-b7k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="124" id="Ldh-K8-fLg"/>
+                            <constraint firstItem="qy7-cA-aej" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="94" id="OV4-Tk-2C9"/>
+                            <constraint firstItem="R88-tB-b7k" firstAttribute="top" secondItem="qy7-cA-aej" secondAttribute="bottom" constant="20" id="P3h-Vv-YZa"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="R88-tB-b7k" secondAttribute="bottom" constant="319" id="Vql-vl-Sj9"/>
+                            <constraint firstItem="qy7-cA-aej" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="192" id="c1M-Kg-iTp"/>
+                            <constraint firstItem="R88-tB-b7k" firstAttribute="top" secondItem="qy7-cA-aej" secondAttribute="bottom" constant="20" id="dCT-RJ-dLY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qy7-cA-aej" secondAttribute="trailing" constant="94" id="mau-Wv-Mu7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lbl" destination="qy7-cA-aej" id="64T-DL-z26"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
